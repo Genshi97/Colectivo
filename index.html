@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inicio | Gestor de Archivos</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript">
+    </script>
+    <script src="https://cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toogle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="inicio.php">Gestor de Archivos</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="vista/documentos.html">Documentos Activos</a></li>
+            <li><a href="vista/historialdocumento.html">Documentos Archivados</a></li>
+            <li><a href="vista/respuesta.html">Documentos Respondidos</a></li>
+            <li><a href="vista/usuarios.html">Usuarios</a></li>
+            <li><a href="vista/historialusuario.html">Usuarios Eliminados</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <section id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="list-group">
+              <a class="list-group-item active color-principal"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>Menu</a>
+              <a class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Dependencias<span class="badge">4</span></a>
+              <a href="documentos.php" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Domentos<span class="badge">5</span></a>
+              <a href="historialdocumento.php" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Domentos Archivados<span class="badge">5</span>></a>
+              <a href="usuarios.php" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Usuarios<span class="badge">4</span></a>
+              <a href="historialusuario.php" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Usuarios Eliminados<span class="badge">4</span></a>
+              <a href="respuesta.php" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Respuestas<span class="badge">1</span></a>
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-tittle">Importancia</h3>
+              </div>
+
+              <div class="panel-body">
+                <div class="col-md-4">
+                  <div class="well dash-box">
+                    <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 5</h2>
+                    <h4>Documentos</h4>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="well dash-box">
+                    <h2><span class="glyphicon glyphicon-user"></span> 4</h2>
+                    <h4>Usuarios</h4>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="well dash-box">
+                    <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 1</h2>
+                    <h4>Respuestas</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <section id="main">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Dependencia</h3>
+            <style type="text/css">
+              #l1{
+                float: right;
+                font-size: medium;
+              }
+            </style>
+            <h3 id="l1"><a href="vista/nuevadependencia.html">Nueva Dependencia</a></h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-12">
+                <input type="text" class="form-control" placeholder="Documento Usuario">
+              </div>
+            </div>
+            <br>
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Dependencia</th>
+                  <th colspan="2">Opciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Sistema</td>
+                    <th><a class="btn btn-success" href="vista/modificardependencia.html">Modificar</a></th>
+                    <th><a class="btn btn-danger">Eliminar</a></th>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Financiera</td>
+                    <th><a class="btn btn-success" href="vista/modificardependencia.html">Modificar</a></th>
+                    <th><a class="btn btn-danger">Eliminar</a></th>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Bodega</td>
+                    <th><a class="btn btn-success" href="vista/modificardependencia.html">Modificar</a></th>
+                    <th><a class="btn btn-danger">Eliminar</a></th>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Recursos Humanos</td>
+                    <th><a class="btn btn-success" href="vista/modificardependencia.html">Modificar</a></th>
+                    <th><a class="btn btn-danger">Eliminar</a></th>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script>
+        jQuery.backstretch([
+              "imagenes/img1.jpg"
+            , "imagenes/img2.jpg"
+            , "imagenes/img3.jpg"
+            , "imagenes/img4.jpg"
+            , "imagenes/img5.jpg"
+            ], {duration: 4000, fade: 1000}
+        );
+    </script>
+  </body>
+</html>
